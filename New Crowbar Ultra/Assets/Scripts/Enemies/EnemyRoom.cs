@@ -10,17 +10,39 @@ using UnityEngine;
 
 public class EnemyRoom : MonoBehaviour
 {
-	private BoxCollider[] m_colliders;
+	[Header("Gizmos")]
+	[Tooltip("Colour of gizmos")]
+	[SerializeField] private Color m_colour = Color.red;
+
+	[Tooltip("Alpha of gizmos' colour")]
+	[Range(0, 1)]
+	[SerializeField] private float m_colourAlpha = .2f;
+
+	[Space]
+	[Tooltip("List of colliders that make up the room")]
+	[SerializeField] private BoxCollider[] m_colliders;
+
 	private List<EnemyActor> m_actors;
 
-    // Start is called before the first frame update
-    void Awake() {
+	/// <summary>
+	///		Draws Gizmos for all the colliders that make up the scene
+	/// </summary>
+	private void OnDrawGizmos() {
+		foreach (BoxCollider c in m_colliders) {
+			// draw fill colour cube
+			Gizmos.color = m_colour * Color.white * m_colourAlpha;
+			Gizmos.DrawCube(c.center + transform.position, c.size);
+
+			// draw wireframe colour cube
+			Gizmos.color = m_colour;
+			Gizmos.DrawWireCube(c.center + transform.position, c.size);
+		}
+	}
+
+	// Start is called before the first frame update
+	void Awake() {
 		m_actors = new List<EnemyActor>();
     }
-
-	private void Start() {
-		m_colliders = GetComponents<BoxCollider>();
-	}
 
 	/// <summary>
 	///		If collided with player, all enemies.Agro = true

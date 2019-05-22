@@ -31,7 +31,7 @@ public class EnemyActor : MonoBehaviour
 	public float Health { get => m_health; }
 
 	private NavMeshAgent m_navMeshAgent;
-	private Transform m_player;
+	private Robbo m_player;
 	private Vector3 m_target;
 
 	private float m_meleeTimer;
@@ -50,7 +50,7 @@ public class EnemyActor : MonoBehaviour
 	void Start() {
 		m_navMeshAgent = GetComponent<NavMeshAgent>();
 
-		m_player = FindObjectOfType<Robbo>().transform;
+		m_player = FindObjectOfType<Robbo>();
 		m_currentState = AI_STATE.WANDER;
 		m_oldState = m_currentState;
 		m_health = m_maxHealth;
@@ -89,12 +89,12 @@ public class EnemyActor : MonoBehaviour
 	///		Determines whether enemy should wander or attack
 	/// </summary>
 	/// <returns>
-	///		Desired AI_STATE
+	///		An AI_STATE. Desired AI_STATE
 	/// </returns>
 	AI_STATE DetermineState() {
 		AI_STATE s = AI_STATE.WANDER;
 
-		Ray ray = new Ray(transform.position, m_player.position - transform.position);
+		Ray ray = new Ray(transform.position, m_player.transform.position - transform.position);
 
 		if (Physics.Raycast(ray, out RaycastHit hit, m_viewRange)) {
 			if (hit.collider.tag == "Player") {
@@ -156,12 +156,12 @@ public class EnemyActor : MonoBehaviour
 	///		Attacks player
 	/// </summary>
 	void Attack() {
-		m_target = m_player.position + (transform.position - m_player.position).normalized * m_attackRange;
-		transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(m_player.position - transform.position), .1f);
+		m_target = m_player.transform.position + (transform.position - m_player.transform.position).normalized * m_attackRange;
+		transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(m_player.transform.position - transform.position), .1f);
 		if (Vector3.Distance(transform.position, m_target) <= m_attackRange) {
 			m_meleeTimer -= Time.deltaTime;
 			if (m_meleeTimer <= 0.0f) {
-				if (Vector3.Distance(transform.position, m_player.position) <= m_attackRange) {
+				if (Vector3.Distance(transform.position, m_player.transform.position) <= m_attackRange) {
 					// m_player.TakeDamage(m_damage);
 					m_meleeTimer = m_meleeCooldown;
 				}
@@ -177,7 +177,7 @@ public class EnemyActor : MonoBehaviour
 	///		Damages Enemy's health
 	/// </summary>
 	/// <param name="damage">
-	///		how much damage was dealt to enemy
+	///		A Float. How much damage is dealt to enemy
 	/// </param>
 	public void TakeDamage(float damage) {
 		m_health -= damage;
