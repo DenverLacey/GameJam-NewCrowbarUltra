@@ -5,11 +5,11 @@ using UnityEngine.AI;
 
 /*
  * Summary:	Handles decision making, pathfinding and attack functionality of enemy
- * Authour:	Denver Lacey
+ * Author:	Denver Lacey
  * Date:	5/22/19
  */
 
- [RequireComponent(typeof(NavMeshAgent))]
+[RequireComponent(typeof(NavMeshAgent))]
 public class EnemyActor : MonoBehaviour
 {
 	[Tooltip("How far away the enemy can see the player from.")]
@@ -36,6 +36,9 @@ public class EnemyActor : MonoBehaviour
 
 	private float m_meleeTimer;
 
+	public bool Agro { get; set; }
+	public EnemyRoom Room { get; set; }
+
 	private enum AI_STATE {
 		WANDER,
 		ATTACK
@@ -47,11 +50,12 @@ public class EnemyActor : MonoBehaviour
 	void Start() {
 		m_navMeshAgent = GetComponent<NavMeshAgent>();
 
-		m_player = GameObject.FindGameObjectWithTag("Player").transform;
+		m_player = FindObjectOfType<Robbo>().transform;
 		m_currentState = AI_STATE.WANDER;
 		m_oldState = m_currentState;
 		m_health = m_maxHealth;
 		m_meleeTimer = m_meleeCooldown;
+		Agro = false;
 	}
 
 	/// <summary>
@@ -63,11 +67,15 @@ public class EnemyActor : MonoBehaviour
 
 		switch (m_currentState) {
 			case AI_STATE.WANDER:
-				Wander();
+				if (Agro)
+					Wander();
+				else
+					WanderRoom();
 				break;
 
 			case AI_STATE.ATTACK:
-				Attack();
+				if (Agro)
+					Attack();
 				break;
 
 			default:
@@ -115,8 +123,28 @@ public class EnemyActor : MonoBehaviour
 		Vector3 point = data.vertices[t];
 
 		// lerp point so point can be anywhere within a tri
-		point = Vector3.Lerp(point, data.vertices[t + 1], Random.Range(0, 1));
-		point = Vector3.Lerp(point, data.vertices[t + 2], Random.Range(0, 1));
+		point = Vector3.Lerp(point, data.vertices[t + 1], Random.Range(0f, 1f));
+		point = Vector3.Lerp(point, data.vertices[t + 2], Random.Range(0f, 1f));
+
+		// set target destination
+		m_target = point;
+
+		m_oldState = AI_STATE.WANDER;
+	}
+
+	/// <summary>
+	///		Enemy wanders just around their room
+	/// </summary>
+	void WanderRoom() {
+		if (Vector3.Distance(transform.position, m_target) > 2f && m_oldState == AI_STATE.WANDER) {
+			return;
+		}
+
+		// get random point in room
+		Vector3 point = Room.RandomPoint();
+
+		// find closest point on the nav mesh
+		point = FindClosestPoint(point);
 
 		// set target destination
 		m_target = point;

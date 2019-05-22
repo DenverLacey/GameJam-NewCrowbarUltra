@@ -11,38 +11,33 @@ using UnityEngine;
 public class Robbo : MonoBehaviour {
 
     [Tooltip("Robbos starting health")]
-    [SerializeField] private float m_maxHealth;
+    [SerializeField] private float m_maxHealth = 100f;
 
     [Tooltip("Robbos speed at which he rotates")]
-    [SerializeField] private float m_rotSpeed;
+    [SerializeField] private float m_rotSpeed = 10;
 
     [Tooltip("Robbos speed at which he rotates")]
-    [SerializeField] private float m_moveSpeed;
+    [SerializeField] private float m_moveSpeed = 20f;
 
     private MultiTargetCamera m_camera;
-    private GameObject m_robbo;
     private GameObject m_crowBar;
     private float m_health;
 
-
     // Use this for initialization
     void Start () {
-        m_rotSpeed = 500.0f;
-        m_moveSpeed = 20.0f;
-        m_maxHealth = 100f;
         m_health = m_maxHealth;
-        m_robbo = GameObject.FindGameObjectWithTag("Robbo");
-        m_crowBar = GameObject.FindGameObjectWithTag("Crowbar");
-        m_camera = GameObject.FindObjectOfType<MultiTargetCamera>();
+        // m_crowBar = GameObject.FindGameObjectWithTag("Crowbar");
+        m_camera = FindObjectOfType<MultiTargetCamera>();
+
+		if (!m_camera) {
+			Debug.LogError("NO CAMERA!!!", this);
+		}
 	}
 
     // Update is called once per frame
     protected void FixedUpdate() {
-        if (m_robbo != null)
-        {
-            Slash();
-            RobboMovement();
-        }
+		Slash();
+		RobboMovement();
 	}
 
     public void Slash() {
@@ -55,13 +50,10 @@ public class Robbo : MonoBehaviour {
 
     public void RobboMovement()
     {
-        var rotInput = Input.GetAxis("Horizontal") * Time.deltaTime * m_rotSpeed;
-        var movInput = Input.GetAxis("Vertical") * Time.deltaTime * m_moveSpeed;
+		float rotInput = Input.GetAxis("Horizontal");
+		float movInput = Input.GetAxis("Vertical");
 
-        Vector3 rawDir = m_camera.transform.TransformDirection(rotInput, 0, movInput);
-        float translate = rawDir.z;
-
-        transform.Rotate(0, rotInput, 0);
-        transform.Translate(0, 0, translate);
+        transform.Rotate(0, rotInput * m_rotSpeed, 0);
+        transform.Translate(0, 0, movInput * m_moveSpeed * Time.deltaTime);
     }
-}     
+}
