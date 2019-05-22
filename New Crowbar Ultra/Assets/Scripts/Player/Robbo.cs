@@ -56,4 +56,13 @@ public class Robbo : MonoBehaviour {
         transform.Rotate(0, rotInput * m_rotSpeed, 0);
         transform.Translate(0, 0, movInput * m_moveSpeed * Time.deltaTime);
     }
+
+    void TakeDamage(float damage)
+    {
+        m_health -= damage;
+        if(m_health <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
 }
