@@ -267,176 +267,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4058797912379800, guid: 56ecf3d40aaa0e2429f0eaaa8c8a38c6,
     type: 2}
   m_PrefabInternal: {fileID: 20211979}
---- !u!1 &41512943
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 41512947}
-  - component: {fileID: 41512946}
-  - component: {fileID: 41512945}
-  - component: {fileID: 41512944}
-  m_Layer: 0
-  m_Name: Cube (10)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!65 &41512944
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 41512943}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &41512945
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 41512943}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &41512946
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 41512943}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &41512947
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 41512943}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22.268, y: 0.13191772, z: -2.0860672}
-  m_LocalScale: {x: 3.8755, y: 1, z: 3.3678148}
-  m_Children: []
-  m_Father: {fileID: 373854420}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &71028187
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 71028191}
-  - component: {fileID: 71028190}
-  - component: {fileID: 71028189}
-  - component: {fileID: 71028188}
-  m_Layer: 0
-  m_Name: Cube (12)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!65 &71028188
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 71028187}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &71028189
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 71028187}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &71028190
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 71028187}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &71028191
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 71028187}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22.338, y: 0.13191772, z: -16.196068}
-  m_LocalScale: {x: 3.8755, y: 1, z: 3.3678148}
-  m_Children: []
-  m_Father: {fileID: 373854420}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &86684263
 GameObject:
   m_ObjectHideFlags: 0
@@ -513,8 +343,59 @@ Transform:
   - {fileID: 1758220119}
   - {fileID: 656990161}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &97143583
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 22.387167
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -3.5915253
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 39
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (32)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &97143584 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 97143583}
 --- !u!1001 &100050159
 Prefab:
   m_ObjectHideFlags: 0
@@ -562,6 +443,57 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4058797912379800, guid: 56ecf3d40aaa0e2429f0eaaa8c8a38c6,
     type: 2}
   m_PrefabInternal: {fileID: 100050159}
+--- !u!1001 &102843021
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 17.607166
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 1.384474
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (18)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &102843022 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 102843021}
 --- !u!1 &153132086
 GameObject:
   m_ObjectHideFlags: 0
@@ -756,6 +688,57 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4759187597140402, guid: 5677f2a1e2a50444c9624bd1b7b9e83e,
     type: 2}
   m_PrefabInternal: {fileID: 159684836}
+--- !u!1001 &160990117
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 19.497166
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -11.305526
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 46
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (39)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &160990118 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 160990117}
 --- !u!1001 &173773383
 Prefab:
   m_ObjectHideFlags: 0
@@ -1005,6 +988,108 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4058797912379800, guid: 56ecf3d40aaa0e2429f0eaaa8c8a38c6,
     type: 2}
   m_PrefabInternal: {fileID: 293184453}
+--- !u!1001 &326794824
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 17.357166
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -11.325526
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 49
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (42)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &326794825 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 326794824}
+--- !u!1001 &327461916
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 23.747166
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 9.874475
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (11)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &327461917 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 327461916}
 --- !u!1 &345357620
 GameObject:
   m_ObjectHideFlags: 0
@@ -1069,7 +1154,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &350467876
 Prefab:
@@ -1134,48 +1219,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4058797912379800, guid: 56ecf3d40aaa0e2429f0eaaa8c8a38c6,
     type: 2}
   m_PrefabInternal: {fileID: 350467876}
---- !u!1001 &358200474
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 400000, guid: 168c973c4717fa142a1adfc986a916a1, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -12.594
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 168c973c4717fa142a1adfc986a916a1, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.524
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 168c973c4717fa142a1adfc986a916a1, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 6.181
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 168c973c4717fa142a1adfc986a916a1, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 168c973c4717fa142a1adfc986a916a1, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 168c973c4717fa142a1adfc986a916a1, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 168c973c4717fa142a1adfc986a916a1, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 168c973c4717fa142a1adfc986a916a1, type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 168c973c4717fa142a1adfc986a916a1, type: 3}
-  m_IsPrefabAsset: 0
 --- !u!1001 &359559623
 Prefab:
   m_ObjectHideFlags: 0
@@ -1312,13 +1355,60 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 570300979}
-  - {fileID: 2107775566}
-  - {fileID: 41512947}
-  - {fileID: 2125784629}
-  - {fileID: 71028191}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &393009012
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 20.497166
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -11.305526
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (41)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &393009013 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 393009012}
 --- !u!1001 &405433715
 Prefab:
   m_ObjectHideFlags: 0
@@ -1606,6 +1696,57 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4692680821743412, guid: 051849fa6b2ea704982e112aa37d4f21,
     type: 2}
   m_PrefabInternal: {fileID: 474051694}
+--- !u!1001 &478506125
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 23.387167
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -4.591525
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (29)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &478506126 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 478506125}
 --- !u!1001 &499389312
 Prefab:
   m_ObjectHideFlags: 0
@@ -1712,6 +1853,57 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4058797912379800, guid: 56ecf3d40aaa0e2429f0eaaa8c8a38c6,
     type: 2}
   m_PrefabInternal: {fileID: 509419878}
+--- !u!1001 &523453247
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 20.747166
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 1.4044745
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (17)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &523453248 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 523453247}
 --- !u!1001 &523786544
 Prefab:
   m_ObjectHideFlags: 0
@@ -1763,6 +1955,57 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4058797912379800, guid: 56ecf3d40aaa0e2429f0eaaa8c8a38c6,
     type: 2}
   m_PrefabInternal: {fileID: 523786544}
+--- !u!1001 &525364802
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 21.747166
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 9.874475
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (10)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &525364803 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 525364802}
 --- !u!1001 &542671833
 Prefab:
   m_ObjectHideFlags: 0
@@ -1903,6 +2146,57 @@ Transform:
   m_Father: {fileID: 373854420}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &573203369
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 20.607166
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 8.854474
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &573203370 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 573203369}
 --- !u!1 &585558720
 GameObject:
   m_ObjectHideFlags: 0
@@ -2149,6 +2443,57 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4759187597140402, guid: 5677f2a1e2a50444c9624bd1b7b9e83e,
     type: 2}
   m_PrefabInternal: {fileID: 622445474}
+--- !u!1001 &642040667
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 20.247166
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -3.6655257
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (24)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &642040668 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 642040667}
 --- !u!1001 &656990160
 Prefab:
   m_ObjectHideFlags: 0
@@ -2653,6 +2998,57 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4835575997971462, guid: b2f73611518966d4aa4376107c48e4b0,
     type: 2}
   m_PrefabInternal: {fileID: 832009412}
+--- !u!1001 &833525663
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 19.497166
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -10.305526
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (44)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &833525664 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 833525663}
 --- !u!1001 &843440525
 Prefab:
   m_ObjectHideFlags: 0
@@ -2708,6 +3104,261 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4759187597140402, guid: 5677f2a1e2a50444c9624bd1b7b9e83e,
     type: 2}
   m_PrefabInternal: {fileID: 843440525}
+--- !u!1001 &853671356
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 21.387167
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -5.591525
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 38
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (31)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &853671357 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 853671356}
+--- !u!1001 &855045677
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 23.387167
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -3.5915253
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 41
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (34)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &855045678 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 855045677}
+--- !u!1001 &925053523
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 20.247166
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -4.6115255
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 37
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (30)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &925053524 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 925053523}
+--- !u!1001 &931234398
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 17.357166
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -10.379526
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 43
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (36)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &931234399 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 931234398}
+--- !u!1001 &947293657
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 17.357166
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -12.305526
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 44
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (37)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &947293658 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 947293657}
 --- !u!1001 &968984125
 Prefab:
   m_ObjectHideFlags: 0
@@ -2745,7 +3396,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4691754913127042, guid: 2ed1b71c12221b54b8840ef567c581f9, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ed1b71c12221b54b8840ef567c581f9, type: 2}
@@ -2936,6 +3587,159 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.04, y: 0.03, z: 0.01}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &1032486371
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 22.747166
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 7.8744745
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1032486372 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1032486371}
+--- !u!1001 &1055043055
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 21.387167
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -3.5915253
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (33)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1055043056 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1055043055}
+--- !u!1001 &1077326081
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 17.607166
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.4044745
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (13)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1077326082 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1077326081}
 --- !u!1001 &1082327997
 Prefab:
   m_ObjectHideFlags: 0
@@ -3155,6 +3959,108 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4588430299667018, guid: 5ecda57f22c28584088a0eb5003eab5b,
     type: 2}
   m_PrefabInternal: {fileID: 1154037905}
+--- !u!1001 &1159280678
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 19.747166
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.4044745
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (14)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1159280679 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1159280678}
+--- !u!1001 &1181737816
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 21.747166
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 7.8744745
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1181737817 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1181737816}
 --- !u!1001 &1212308355
 Prefab:
   m_ObjectHideFlags: 0
@@ -3254,6 +4160,108 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4759187597140402, guid: 5677f2a1e2a50444c9624bd1b7b9e83e,
     type: 2}
   m_PrefabInternal: {fileID: 1212308355}
+--- !u!1001 &1223061261
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 21.747166
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 8.874475
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1223061262 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1223061261}
+--- !u!1001 &1228036434
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 18.497166
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -12.305526
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (43)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1228036435 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1228036434}
 --- !u!1001 &1231766338
 Prefab:
   m_ObjectHideFlags: 0
@@ -3291,11 +4299,350 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4588430299667018, guid: 5ecda57f22c28584088a0eb5003eab5b, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ecda57f22c28584088a0eb5003eab5b, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1001 &1235234485
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 19.747166
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 1.4044745
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (15)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1235234486 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1235234485}
+--- !u!1001 &1238381792
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 19.497166
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -12.305526
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (38)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1238381793 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1238381792}
+--- !u!1001 &1259995919
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4530772960726518, guid: 37463be2ed466df4bb706d75a67dcb11, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -12.594
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530772960726518, guid: 37463be2ed466df4bb706d75a67dcb11, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.524
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530772960726518, guid: 37463be2ed466df4bb706d75a67dcb11, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 6.181
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530772960726518, guid: 37463be2ed466df4bb706d75a67dcb11, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530772960726518, guid: 37463be2ed466df4bb706d75a67dcb11, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530772960726518, guid: 37463be2ed466df4bb706d75a67dcb11, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530772960726518, guid: 37463be2ed466df4bb706d75a67dcb11, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530772960726518, guid: 37463be2ed466df4bb706d75a67dcb11, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 37463be2ed466df4bb706d75a67dcb11, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &1270894257
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 21.387167
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -4.591525
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (28)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1270894258 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1270894257}
+--- !u!1001 &1274166272
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 20.497166
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -10.305526
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 53
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (46)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1274166273 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1274166272}
+--- !u!1001 &1277261674
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 11.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.34719658
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 13.676
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &1283890244
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 20.497166
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -12.305526
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 54
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (47)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1283890245 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1283890244}
 --- !u!1001 &1324173619
 Prefab:
   m_ObjectHideFlags: 0
@@ -3477,6 +4824,57 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4759187597140402, guid: 5677f2a1e2a50444c9624bd1b7b9e83e,
     type: 2}
   m_PrefabInternal: {fileID: 1346537588}
+--- !u!1001 &1388030057
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 18.497166
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -11.305526
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 47
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (40)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1388030058 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1388030057}
 --- !u!1001 &1405879185
 Prefab:
   m_ObjectHideFlags: 0
@@ -3532,6 +4930,159 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4835575997971462, guid: b2f73611518966d4aa4376107c48e4b0,
     type: 2}
   m_PrefabInternal: {fileID: 1405879185}
+--- !u!1001 &1408479466
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 20.607166
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 7.8744745
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1408479467 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1408479466}
+--- !u!1001 &1423456813
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 22.747166
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 8.874475
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1423456814 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1423456813}
+--- !u!1001 &1424830897
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 18.747166
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.4044745
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (19)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1424830898 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1424830897}
 --- !u!1001 &1429569380
 Prefab:
   m_ObjectHideFlags: 0
@@ -3700,7 +5251,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4692680821743412, guid: 051849fa6b2ea704982e112aa37d4f21, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4692680821743412, guid: 051849fa6b2ea704982e112aa37d4f21, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -3709,6 +5260,261 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 051849fa6b2ea704982e112aa37d4f21, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1001 &1492013919
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 22.387167
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -5.591525
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 33
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (26)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1492013920 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1492013919}
+--- !u!1001 &1510351991
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 20.747166
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.4044745
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (20)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1510351992 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1510351991}
+--- !u!1001 &1524136556
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 19.747166
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 2.4044745
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (21)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1524136557 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1524136556}
+--- !u!1001 &1526371325
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 20.747166
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 2.4044745
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (23)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1526371326 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1526371325}
+--- !u!1001 &1528423500
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 17.607166
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 2.3304741
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (12)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1528423501 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1528423500}
 --- !u!1 &1569660968
 GameObject:
   m_ObjectHideFlags: 0
@@ -3742,8 +5548,55 @@ Transform:
   - {fileID: 1633013709}
   - {fileID: 747473145}
   - {fileID: 474051695}
+  - {fileID: 573203370}
+  - {fileID: 1408479467}
+  - {fileID: 1181737817}
+  - {fileID: 1032486372}
+  - {fileID: 1705148765}
+  - {fileID: 1423456814}
+  - {fileID: 1223061262}
+  - {fileID: 2125781132}
+  - {fileID: 1788574225}
+  - {fileID: 525364803}
+  - {fileID: 327461917}
+  - {fileID: 1528423501}
+  - {fileID: 1077326082}
+  - {fileID: 1159280679}
+  - {fileID: 1235234486}
+  - {fileID: 1954408755}
+  - {fileID: 523453248}
+  - {fileID: 102843022}
+  - {fileID: 1424830898}
+  - {fileID: 1510351992}
+  - {fileID: 1524136557}
+  - {fileID: 1889814359}
+  - {fileID: 1526371326}
+  - {fileID: 642040668}
+  - {fileID: 1865989580}
+  - {fileID: 1492013920}
+  - {fileID: 1987135081}
+  - {fileID: 1270894258}
+  - {fileID: 478506126}
+  - {fileID: 925053524}
+  - {fileID: 853671357}
+  - {fileID: 97143584}
+  - {fileID: 1055043056}
+  - {fileID: 855045678}
+  - {fileID: 2060040865}
+  - {fileID: 931234399}
+  - {fileID: 947293658}
+  - {fileID: 1238381793}
+  - {fileID: 160990118}
+  - {fileID: 1388030058}
+  - {fileID: 393009013}
+  - {fileID: 326794825}
+  - {fileID: 1228036435}
+  - {fileID: 833525664}
+  - {fileID: 1801316843}
+  - {fileID: 1274166273}
+  - {fileID: 1283890245}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1624949825
 Prefab:
@@ -3863,6 +5716,57 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4692680821743412, guid: 051849fa6b2ea704982e112aa37d4f21,
     type: 2}
   m_PrefabInternal: {fileID: 1633013708}
+--- !u!1001 &1705148764
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 23.747166
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 7.8744745
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1705148765 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1705148764}
 --- !u!1001 &1738686868
 Prefab:
   m_ObjectHideFlags: 0
@@ -3977,6 +5881,159 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4759187597140402, guid: 5677f2a1e2a50444c9624bd1b7b9e83e,
     type: 2}
   m_PrefabInternal: {fileID: 1758220118}
+--- !u!1001 &1788574224
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 22.747166
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 9.874475
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (9)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1788574225 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1788574224}
+--- !u!1001 &1801316842
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 18.497166
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -10.305526
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (45)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1801316843 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1801316842}
+--- !u!1001 &1865989579
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 20.247166
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -5.591525
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (25)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1865989580 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1865989579}
 --- !u!1001 &1884797428
 Prefab:
   m_ObjectHideFlags: 0
@@ -4032,6 +6089,57 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4692680821743412, guid: 051849fa6b2ea704982e112aa37d4f21,
     type: 2}
   m_PrefabInternal: {fileID: 1884797428}
+--- !u!1001 &1889814358
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 18.747166
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 2.4044745
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (22)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1889814359 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1889814358}
 --- !u!1001 &1906293641
 Prefab:
   m_ObjectHideFlags: 0
@@ -4130,6 +6238,57 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4507343129300022, guid: 194664722d491144db74fcd29b793fde,
     type: 2}
   m_PrefabInternal: {fileID: 1924516728}
+--- !u!1001 &1954408754
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 18.747166
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 1.4044745
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (16)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1954408755 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1954408754}
 --- !u!1001 &1955463676
 Prefab:
   m_ObjectHideFlags: 0
@@ -4167,7 +6326,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4833253050728206, guid: 073c7696ee72dec4e9dafbcc4961eda8, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4833253050728206, guid: 073c7696ee72dec4e9dafbcc4961eda8, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -4184,6 +6343,57 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 073c7696ee72dec4e9dafbcc4961eda8, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1001 &1987135080
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 22.387167
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -4.591525
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (27)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1987135081 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1987135080}
 --- !u!1001 &1989845718
 Prefab:
   m_ObjectHideFlags: 0
@@ -4303,6 +6513,57 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.04, y: 0.03, z: 0.01}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &2060040864
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 23.387167
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -5.591525
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 42
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (35)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &2060040865 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 2060040864}
 --- !u!1001 &2068194666
 Prefab:
   m_ObjectHideFlags: 0
@@ -4515,91 +6776,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4759187597140402, guid: 5677f2a1e2a50444c9624bd1b7b9e83e,
     type: 2}
   m_PrefabInternal: {fileID: 2106461172}
---- !u!1 &2107775562
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2107775566}
-  - component: {fileID: 2107775565}
-  - component: {fileID: 2107775564}
-  - component: {fileID: 2107775563}
-  m_Layer: 0
-  m_Name: Cube (9)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!65 &2107775563
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2107775562}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &2107775564
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2107775562}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &2107775565
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2107775562}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &2107775566
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2107775562}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 24.928, y: -0.088082284, z: 5.633933}
-  m_LocalScale: {x: 3.8755, y: 1, z: 3.3678148}
-  m_Children: []
-  m_Father: {fileID: 373854420}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2116649582
 Prefab:
   m_ObjectHideFlags: 0
@@ -4655,88 +6831,54 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4058797912379800, guid: 56ecf3d40aaa0e2429f0eaaa8c8a38c6,
     type: 2}
   m_PrefabInternal: {fileID: 2116649582}
---- !u!1 &2125784625
-GameObject:
+--- !u!1001 &2125781131
+Prefab:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2125784629}
-  - component: {fileID: 2125784628}
-  - component: {fileID: 2125784627}
-  - component: {fileID: 2125784626}
-  m_Layer: 0
-  m_Name: Cube (11)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!65 &2125784626
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2125784625}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &2125784627
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2125784625}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &2125784628
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2125784625}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &2125784629
+  m_Modification:
+    m_TransformParent: {fileID: 1569660969}
+    m_Modifications:
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 23.747166
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.046704352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 8.874475
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346392385736542, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+      propertyPath: m_Name
+      value: Saftey Stool (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d39d3f54a9c76f46a7d320c798421bd, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &2125781132 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2125784625}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 24.778, y: 0.13191772, z: -8.986067}
-  m_LocalScale: {x: 3.8755, y: 1, z: 3.3678148}
-  m_Children: []
-  m_Father: {fileID: 373854420}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_CorrespondingSourceObject: {fileID: 4399075799064516, guid: 9d39d3f54a9c76f46a7d320c798421bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 2125781131}
