@@ -1,31 +1,31 @@
-﻿using System.Collections;
+﻿/*
+ * Summary:	Handles decision making, pathfinding and attack functionality of enemy
+ * Author:	Denver Lacey
+ * Date:	22/05/19
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-
-/*
- * Summary:	Handles decision making, pathfinding and attack functionality of enemy
- * Author:	Denver Lacey
- * Date:	5/22/19
- */
 
 [RequireComponent(typeof(NavMeshAgent))]
 public class EnemyActor : MonoBehaviour
 {
 	[Tooltip("How far away the enemy can see the player from.")]
-	[SerializeField] private float m_viewRange;
+	[SerializeField] private float m_viewRange = 10f;
 
 	[Tooltip("How far can enemy reach with melee attack.")]
-	[SerializeField] private float m_attackRange;
+	[SerializeField] private float m_attackRange = 1.5f;
 
 	[Tooltip("How fast the enemy can make consecutive melees.")]
-	[SerializeField] private float m_meleeCooldown;
+	[SerializeField] private float m_meleeCooldown = 1f;
 
 	[Tooltip("Enemy's maximum amount of health.")]
-	[SerializeField] private int m_maxHealth;
+	[SerializeField] private float  m_maxHealth = 10f;
 
 	[Tooltip("How much damage the enemy will deal.")]
-	[SerializeField] private int m_damage;
+	[SerializeField] private float m_damage = 10f;
 
 	private float m_health;
 	public float Health { get => m_health; }
@@ -54,7 +54,7 @@ public class EnemyActor : MonoBehaviour
 		m_currentState = AI_STATE.WANDER;
 		m_oldState = m_currentState;
 		m_health = m_maxHealth;
-		m_meleeTimer = m_meleeCooldown;
+		m_meleeTimer = 0f;
 		Agro = false;
 	}
 
@@ -97,7 +97,7 @@ public class EnemyActor : MonoBehaviour
 		Ray ray = new Ray(transform.position, m_player.transform.position - transform.position);
 
 		if (Physics.Raycast(ray, out RaycastHit hit, m_viewRange)) {
-			if (hit.collider.tag == "Player") {
+			if (hit.collider.GetComponent<Robbo>()) {
 				s = AI_STATE.ATTACK;
 			}
 		}
@@ -161,7 +161,7 @@ public class EnemyActor : MonoBehaviour
 		if (Vector3.Distance(transform.position, m_target) <= m_attackRange) {
 			m_meleeTimer -= Time.deltaTime;
 			if (m_meleeTimer <= 0.0f) {
-				if (Vector3.Distance(transform.position, m_player.transform.position) <= m_attackRange) {
+				if (Vector3.Distance(transform.position, m_player.transform.position) <= m_attackRange + 0.1f) {
 					m_player.TakeDamage(m_damage);
 					m_meleeTimer = m_meleeCooldown;
 				}

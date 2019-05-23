@@ -1,12 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-/*
+﻿/*
  * Summary:	Handles all enemies in room instance, turns enemies agro
  * Author:	Denver Lacey
- * Date:	5/22/19
+ * Date:	22/05/19
  */
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class EnemyRoom : MonoBehaviour
 {
@@ -30,7 +30,7 @@ public class EnemyRoom : MonoBehaviour
 	private void OnDrawGizmos() {
 		foreach (BoxCollider c in m_colliders) {
 			// draw fill colour cube
-			Gizmos.color = m_colour * Color.white * m_colourAlpha;
+			Gizmos.color = m_colour * m_colourAlpha;
 			Gizmos.DrawCube(c.transform.position, c.size);
 
 			// draw wireframe colour cube

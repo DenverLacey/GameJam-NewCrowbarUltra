@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * Summary:	Controls the movement of the camera
+ * Author:	Denver Lacey
+ * Date:	23/05/19
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

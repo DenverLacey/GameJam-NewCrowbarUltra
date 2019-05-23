@@ -1,13 +1,14 @@
-﻿//*
-// @brief Roboo character mechanics and variables
-// Author: Elisha Anagnostakis
-// Date: 22/05/19
-//*
+﻿/*
+ * Summary:	Roboo character mechanics and variables
+ * Author:	Elisha Anagnostakis
+ * Date:	22/05/19
+ */
 
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Animator))]
 public class Robbo : MonoBehaviour {
 
     [Tooltip("Robbos starting health")]
@@ -19,36 +20,47 @@ public class Robbo : MonoBehaviour {
     [Tooltip("Robbos speed at which he rotates")]
     [SerializeField] private float m_moveSpeed = 20f;
 
-    private CameraActor m_camera;
+	private Animator m_animator;
+	public bool Attacking { get; set; }
+
+	private Vector2 m_IKGoal;
+
     private GameObject m_crowBar;
     public float m_health;
+
 
     // Use this for initialization
     void Start () {
         m_health = m_maxHealth;
-        // m_crowBar = GameObject.FindGameObjectWithTag("Crowbar");
-        m_camera = FindObjectOfType<CameraActor>();
-
-		if (!m_camera) {
-			Debug.LogError("NO CAMERA!!!", this);
-		}
+		m_animator = GetComponent<Animator>();
+		// m_crowBar = GameObject.FindGameObjectWithTag("Crowbar");
+		Attacking = false;
 	}
 
     // Update is called once per frame
     protected void FixedUpdate() {
-		Slash();
+		if (Input.GetMouseButtonDown(0)) {
+			Attacking = true;
+		}
+		if (Input.GetMouseButtonUp(0)) {
+			Attacking = false;
+		}
+
 		RobboMovement();
 	}
 
-    public void Slash() {
-        if (m_crowBar != null)
-        {
-            Vector3 mouesInput = new Vector3(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"), 0);
-            // do stuff
-        }
-    }
+	private void OnAnimatorIK() {
+		if (Attacking) {
+			m_IKGoal += new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Moues Y"));
+			m_animator.SetIKPosition(AvatarIKGoal.RightHand, new Vector3(m_IKGoal.x, m_IKGoal.y, 0));
+			m_animator.SetIKPositionWeight(AvatarIKGoal.RightHand, 1);
+		}
+		else {
+			m_animator.SetIKPositionWeight(AvatarIKGoal.RightHand, 0);
+		}
+	}
 
-    public void RobboMovement()
+	public void RobboMovement()
     {
 		float rotInput = Input.GetAxis("Horizontal");
 		float movInput = Input.GetAxis("Vertical");
