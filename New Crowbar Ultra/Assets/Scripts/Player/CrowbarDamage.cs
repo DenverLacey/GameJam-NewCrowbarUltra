@@ -13,15 +13,18 @@ public class CrowbarDamage : MonoBehaviour
     void OnCollisionEnter(Collision other)
     {
         string tag = other.gameObject.tag;
-        if(tag == "Enemy")
+        if(other.gameObject.GetComponent<EnemyActor>())
         {
-            EnemyActor enemy = GetComponent<EnemyActor>();
-            if(enemy)
-            {
-                enemy.TakeDamage(m_damage);
-            }  
+            EnemyActor enemy = other.gameObject.GetComponent<EnemyActor>();
+            enemy.TakeDamage(m_damage);
+            
+            Debug.Log("attacked enemy");
             //GameObject temp = Instantiate(m_blood, transform.position, transform.rotation) as GameObject;
             //Destroy(temp);
+        }
+        else
+        {
+            Debug.Log("attck failed");
         }
     }
 }

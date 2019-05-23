@@ -11,7 +11,7 @@ using UnityEngine;
 public class Robbo : MonoBehaviour {
 
     [Tooltip("Robbos starting health")]
-    [SerializeField] private float m_maxHealth = 100f;
+    [SerializeField] public float m_maxHealth = 100f;
 
     [Tooltip("Robbos speed at which he rotates")]
     [SerializeField] private float m_rotSpeed = 10;
@@ -19,15 +19,15 @@ public class Robbo : MonoBehaviour {
     [Tooltip("Robbos speed at which he rotates")]
     [SerializeField] private float m_moveSpeed = 20f;
 
-    private MultiTargetCamera m_camera;
+    private CameraActor m_camera;
     private GameObject m_crowBar;
-    private float m_health;
+    public float m_health;
 
     // Use this for initialization
     void Start () {
         m_health = m_maxHealth;
         // m_crowBar = GameObject.FindGameObjectWithTag("Crowbar");
-        m_camera = FindObjectOfType<MultiTargetCamera>();
+        m_camera = FindObjectOfType<CameraActor>();
 
 		if (!m_camera) {
 			Debug.LogError("NO CAMERA!!!", this);
@@ -57,10 +57,10 @@ public class Robbo : MonoBehaviour {
         transform.Translate(0, 0, movInput * m_moveSpeed * Time.deltaTime);
     }
 
-    void TakeDamage(float damage)
+    public void TakeDamage(float damage)
     {
         m_health -= damage;
-        if(m_health <= 0)
+        if(m_health <= 0.0f)
         {
             Destroy(gameObject);
         }
