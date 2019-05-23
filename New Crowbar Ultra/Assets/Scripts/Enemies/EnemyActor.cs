@@ -68,7 +68,7 @@ public class EnemyActor : MonoBehaviour
 		switch (m_currentState) {
 			case AI_STATE.WANDER:
 				if (Agro)
-					Wander();
+					Wander(); 
 				else
 					WanderRoom();
 				break;
@@ -162,7 +162,7 @@ public class EnemyActor : MonoBehaviour
 			m_meleeTimer -= Time.deltaTime;
 			if (m_meleeTimer <= 0.0f) {
 				if (Vector3.Distance(transform.position, m_player.transform.position) <= m_attackRange) {
-					// m_player.TakeDamage(m_damage);
+					m_player.TakeDamage(m_damage);
 					m_meleeTimer = m_meleeCooldown;
 				}
 			}
@@ -203,7 +203,9 @@ public class EnemyActor : MonoBehaviour
 			}
 		}
 		if (NavMesh.FindClosestEdge(source, out hit, NavMesh.GetAreaFromName("walkable"))) {
-			return hit.position;
+			if (hit.hit) {
+				return hit.position;
+			}
 		}
 		return Vector3.positiveInfinity;
 	}

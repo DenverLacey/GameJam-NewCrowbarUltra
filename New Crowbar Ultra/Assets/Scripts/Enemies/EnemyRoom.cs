@@ -25,17 +25,17 @@ public class EnemyRoom : MonoBehaviour
 	private List<EnemyActor> m_actors;
 
 	/// <summary>
-	///		Draws Gizmos for all the colliders that make up the scene
+	///		Draws Gizmos for all the colliders that make up the room
 	/// </summary>
 	private void OnDrawGizmos() {
 		foreach (BoxCollider c in m_colliders) {
 			// draw fill colour cube
 			Gizmos.color = m_colour * Color.white * m_colourAlpha;
-			Gizmos.DrawCube(c.center + transform.position, c.size);
+			Gizmos.DrawCube(c.transform.position, c.size);
 
 			// draw wireframe colour cube
 			Gizmos.color = m_colour;
-			Gizmos.DrawWireCube(c.center + transform.position, c.size);
+			Gizmos.DrawWireCube(c.transform.position, c.size);
 		}
 	}
 
@@ -52,16 +52,19 @@ public class EnemyRoom : MonoBehaviour
 	///		A Collider. The Collider that has entered the room
 	/// </param>
 	private void OnTriggerEnter(Collider other) {
-		// if other is player
-		if (other.GetComponent<Robbo>()) {
-			foreach (EnemyActor a in m_actors) {
-				a.Agro = true;
+		// check if player
+		Robbo robbo = other.GetComponent<Robbo>();
+		if (robbo) {
+			foreach (EnemyActor e in m_actors) {
+				e.Agro = true;
 			}
+			return;
 		}
-		// if other is an enemy actor
-		else if (other.GetComponent<EnemyActor>()) {
-			m_actors.Add(other.GetComponent<EnemyActor>());
-			m_actors[m_actors.Count - 1].Room = this;
+		// check if enemy
+		EnemyActor enemy = other.GetComponent<EnemyActor>();
+		if (enemy && !m_actors.Exists(e => e == enemy)) {
+			enemy.Room = this;
+			m_actors.Add(enemy);
 		}
 	}
 
