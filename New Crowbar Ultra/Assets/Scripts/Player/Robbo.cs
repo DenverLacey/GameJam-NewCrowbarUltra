@@ -46,7 +46,7 @@ public class Robbo : MonoBehaviour {
 
     public GameObject m_crowBar;
 
-	[HideInInspector]
+    [HideInInspector]
     public float m_health;
 
 
@@ -67,7 +67,7 @@ public class Robbo : MonoBehaviour {
 			m_crowBar.transform.localRotation = Quaternion.Euler(m_crowbarOffsetRotation);
 			m_crowBar.transform.localScale = m_crowbarOffsetScale;
 		}
-	}
+    }
 
     // Update is called once per frame
     protected void FixedUpdate() {
@@ -99,6 +99,7 @@ public class Robbo : MonoBehaviour {
 
         transform.Rotate(0, rotInput * m_rotSpeed, 0);
         transform.Translate(0, 0, movInput * m_moveSpeed * Time.deltaTime);
+
     }
 
     public void TakeDamage(float damage)

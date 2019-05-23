@@ -26,7 +26,9 @@ public class CrowbarThrow : MonoBehaviour
     public bool hasWeapon;
     public bool pulling;
 
-
+    public ParticleSystem catchParticle;
+    public ParticleSystem trailParticle;
+    public TrailRenderer trailRenderer;
 
     // Start is called before the first frame update
     void Start()
@@ -87,6 +89,11 @@ public class CrowbarThrow : MonoBehaviour
         weapon.localEulerAngles = m_origLocRot;
         weapon.localPosition = m_origLocPos;
         hasWeapon = true;
+
+        //Particle and trail
+        catchParticle.Play();
+        trailRenderer.emitting = false;
+        trailParticle.Stop();
     }
 
     public void WeaponThrow()
@@ -99,6 +106,10 @@ public class CrowbarThrow : MonoBehaviour
         weapon.eulerAngles = new Vector3(0, -90 + transform.eulerAngles.y, 0);
         weapon.transform.position += transform.right / 5;
         m_crowbarRb.AddForce(transform.forward * m_throwPower + transform.up * 2, ForceMode.Impulse);
+
+        //Trail
+        trailRenderer.emitting = true;
+        trailParticle.Play();
     }
 
     public Vector3 GetQuadraticCurvePoint(float t, Vector3 p0, Vector3 p1, Vector3 p2)
