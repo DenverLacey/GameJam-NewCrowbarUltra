@@ -59,7 +59,7 @@ public class EnemyActor : MonoBehaviour
 	}
 
 	/// <summary>
-	///		Calls appropriate function based current State
+	///	Calls appropriate function based on current State
 	/// </summary>
 	void Update() {
 		// determine state
@@ -86,10 +86,10 @@ public class EnemyActor : MonoBehaviour
 	}
 
 	/// <summary>
-	///		Determines whether enemy should wander or attack
+	///	Determines whether enemy should wander or attack
 	/// </summary>
 	/// <returns>
-	///		An AI_STATE. Desired AI_STATE
+	///	An AI_STATE. Desired AI_STATE
 	/// </returns>
 	AI_STATE DetermineState() {
 		AI_STATE s = AI_STATE.WANDER;
@@ -106,7 +106,7 @@ public class EnemyActor : MonoBehaviour
 	}
 
 	/// <summary>
-	///		Enemy wanders around nav mesh
+	///	Enemy wanders around nav mesh
 	/// </summary>
 	void Wander() {
 		if (Vector3.Distance(transform.position, m_target) > 2f && m_oldState == AI_STATE.WANDER) {
@@ -133,7 +133,7 @@ public class EnemyActor : MonoBehaviour
 	}
 
 	/// <summary>
-	///		Enemy wanders just around their room
+	///	Enemy wanders just around their room
 	/// </summary>
 	void WanderRoom() {
 		if (Vector3.Distance(transform.position, m_target) > 2f && m_oldState == AI_STATE.WANDER) {
@@ -153,7 +153,7 @@ public class EnemyActor : MonoBehaviour
 	}
 
 	/// <summary>
-	///		Attacks player
+	///	Attacks player
 	/// </summary>
 	void Attack() {
 		m_target = m_player.transform.position + (transform.position - m_player.transform.position).normalized * m_attackRange;
@@ -174,10 +174,10 @@ public class EnemyActor : MonoBehaviour
 	}
 
 	/// <summary>
-	///		Damages Enemy's health
+	///	Damages Enemy's health
 	/// </summary>
 	/// <param name="damage">
-	///		A Float. How much damage is dealt to enemy
+	///	A Float. How much damage is dealt to enemy
 	/// </param>
 	public void TakeDamage(float damage) {
 		m_health -= damage;
@@ -188,13 +188,13 @@ public class EnemyActor : MonoBehaviour
 	}
 
 	/// <summary>
-	///		Finds the closest point on the nav mesh to a source position
+	///	Finds the closest point on the nav mesh to a source position
 	/// </summary>
 	/// <param name="source">
-	///		A Vector3. The source position the user wants to query
+	///	A Vector3. The source position the user wants to query
 	/// </param>
 	/// <returns>
-	///		A Vector3. The closest point on the nav mesh. Retuens Vector3.positiveInfinity if none found
+	///	A Vector3. The closest point on the nav mesh. Retuens Vector3.positiveInfinity if none found
 	/// </returns>
 	Vector3 FindClosestPoint(Vector3 source) {
 		if (NavMesh.SamplePosition(source, out NavMeshHit hit, transform.lossyScale.y, NavMesh.GetAreaFromName("walkable"))) {

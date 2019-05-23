@@ -25,7 +25,7 @@ public class EnemyRoom : MonoBehaviour
 	private List<EnemyActor> m_actors;
 
 	/// <summary>
-	///		Draws Gizmos for all the colliders that make up the room
+	///	Draws Gizmos for all the colliders that make up the room
 	/// </summary>
 	private void OnDrawGizmos() {
 		foreach (BoxCollider c in m_colliders) {
@@ -45,11 +45,11 @@ public class EnemyRoom : MonoBehaviour
     }
 
 	/// <summary>
-	///		If collided with player, all enemies.Agro = true
-	///		If collided with enemy, added to m_actors
+	///	If collided with player, all enemies.Agro = true.
+	///	If collided with enemy, added to m_actors
 	/// </summary>
 	/// <param name="other">
-	///		A Collider. The Collider that has entered the room
+	///	A Collider. The Collider that has entered the room
 	/// </param>
 	private void OnTriggerEnter(Collider other) {
 		// check if player
@@ -69,13 +69,13 @@ public class EnemyRoom : MonoBehaviour
 	}
 
 	/// <summary>
-	///		Finds if point is inside room
+	///	Finds if point is inside room
 	/// </summary>
 	/// <param name="point">
-	///		 A Vector3. The point the user is querying
+	///	A Vector3. The point the user is querying
 	/// </param>
 	/// <returns>
-	///		A Boolean. If point is inside room
+	///	A Boolean. If point is inside room
 	/// </returns>
 	public bool IsPointInRoom(Vector3 point) {
 		foreach (BoxCollider c in m_colliders) {
@@ -87,16 +87,16 @@ public class EnemyRoom : MonoBehaviour
 	}
 
 	/// <summary>
-	///		Finds if point is inside collider
+	///	Finds if point is inside collider
 	/// </summary>
 	/// <param name="point">
-	///		A Vector3. The point the user is querying
+	///	A Vector3. The point the user is querying
 	/// </param>
 	/// <param name="collider">
-	///		A BoxCollider. The collider the user is querying
+	///	A BoxCollider. The collider the user is querying
 	/// </param>
 	/// <returns>
-	///		A Boolean. If point is inside collider
+	///	A Boolean. If point is inside collider
 	/// </returns>
 	bool IsPointInCollider(Vector3 point, BoxCollider collider) {
 		if (collider.bounds.min.x <= point.x && point.x <= collider.bounds.max.x &&
@@ -108,10 +108,10 @@ public class EnemyRoom : MonoBehaviour
 	}
 
 	/// <summary>
-	///		Finds a random point within the room
+	///	Finds a random point within the room
 	/// </summary>
 	/// <returns>
-	///		A Vector3. The random point that was calculated
+	///	A Vector3. The random point that was calculated
 	/// </returns>
 	public Vector3 RandomPoint() {
 		// pick random collider in room

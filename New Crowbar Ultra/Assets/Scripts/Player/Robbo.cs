@@ -20,12 +20,33 @@ public class Robbo : MonoBehaviour {
     [Tooltip("Robbos speed at which he rotates")]
     [SerializeField] private float m_moveSpeed = 20f;
 
+	[Header("Picking up crowbar stuff")]
+	[Tooltip("Key to pick up crowbar")]
+	[SerializeField] private KeyCode m_pickupCrowbarKey;
+
+	[Tooltip("How far away player can be and still pick up crowbar")]
+	[SerializeField] private float m_pickupDistance;
+
+	[Tooltip("Robbo's right hand transform")]
+	[SerializeField] private Transform m_rightHand;
+
+	[Tooltip("Crowbar offset position")]
+	[SerializeField] private Vector3 m_crowbarOffsetPosition;
+
+	[Tooltip("Crowbar offset rotation")]
+	[SerializeField] private Vector3 m_crowbarOffsetRotation;
+
+	[Tooltip("Crowbar offset scale")]
+	[SerializeField] private Vector3 m_crowbarOffsetScale;
+
 	private Animator m_animator;
 	public bool Attacking { get; set; }
 
 	private Vector2 m_IKGoal;
 
-    private GameObject m_crowBar;
+    public GameObject m_crowBar;
+
+	[HideInInspector]
     public float m_health;
 
 
@@ -35,6 +56,17 @@ public class Robbo : MonoBehaviour {
 		m_animator = GetComponent<Animator>();
 		// m_crowBar = GameObject.FindGameObjectWithTag("Crowbar");
 		Attacking = false;
+	}
+
+	void Update() {
+		if (Input.GetKeyDown(m_pickupCrowbarKey) &&
+			Vector3.Distance(transform.position, m_crowBar.transform.position) <= m_pickupDistance) 
+		{
+			m_crowBar.transform.parent = m_rightHand;
+			m_crowBar.transform.localPosition = m_crowbarOffsetPosition;
+			m_crowBar.transform.localRotation = Quaternion.Euler(m_crowbarOffsetRotation);
+			m_crowBar.transform.localScale = m_crowbarOffsetScale;
+		}
 	}
 
     // Update is called once per frame
