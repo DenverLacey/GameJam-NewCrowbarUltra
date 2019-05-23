@@ -10,6 +10,11 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
+    public void BackButton()
+    {
+
+    }
+
     public void QuitGame()
     {
         Debug.Log("game quit");

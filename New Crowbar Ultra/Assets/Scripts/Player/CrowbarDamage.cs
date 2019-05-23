@@ -7,17 +7,31 @@ public class CrowbarDamage : MonoBehaviour
     [Tooltip("Damage to the enemies")]
     [SerializeField] private float m_damage;
 
-   // [Tooltip("Blood squirt when enemy gets hit")]
-    //[SerializeField] private GameObject m_blood;
+    public bool activated;
 
-    void OnCollisionEnter(Collision other)
+    public float m_rotationSpeed;
+
+    public void Update()
     {
-        string tag = other.gameObject.tag;
-        if(other.gameObject.GetComponent<EnemyActor>())
+        if(activated)
         {
-            EnemyActor enemy = other.gameObject.GetComponent<EnemyActor>();
+            transform.localEulerAngles += Vector3.forward + transform.up * m_rotationSpeed * Time.deltaTime;
+        }
+    }
+
+    private void OnCollisionEnter(Collision Collision)
+    {
+        string tag = Collision.gameObject.tag;
+        if(Collision.gameObject.layer == 11 && Collision.gameObject.GetComponent<EnemyActor>())
+        {
+            Debug.Log(Collision.gameObject.name);
+            GetComponent<Rigidbody>().Sleep();
+            GetComponent<Rigidbody>().collisionDetectionMode = CollisionDetectionMode.ContinuousSpeculative;
+            GetComponent<Rigidbody>().isKinematic = true;
+            activated = false;
+
+            EnemyActor enemy = Collision.gameObject.GetComponent<EnemyActor>();
             enemy.TakeDamage(m_damage);
-            
             Debug.Log("attacked enemy");
             //GameObject temp = Instantiate(m_blood, transform.position, transform.rotation) as GameObject;
             //Destroy(temp);
