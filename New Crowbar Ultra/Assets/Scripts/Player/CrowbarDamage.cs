@@ -11,6 +11,8 @@ public class CrowbarDamage : MonoBehaviour
 
     public float m_rotationSpeed;
 
+    [SerializeField] private GameObject m_blood;
+
     public void Update()
     {
         if(activated)
@@ -33,8 +35,8 @@ public class CrowbarDamage : MonoBehaviour
             EnemyActor enemy = Collision.gameObject.GetComponent<EnemyActor>();
             enemy.TakeDamage(m_damage);
             Debug.Log("attacked enemy");
-            //GameObject temp = Instantiate(m_blood, transform.position, transform.rotation) as GameObject;
-            //Destroy(temp);
+            GameObject temp = Instantiate(m_blood, enemy.transform.position, Quaternion.identity);
+            Destroy(temp, 1);
         }
         else
         {

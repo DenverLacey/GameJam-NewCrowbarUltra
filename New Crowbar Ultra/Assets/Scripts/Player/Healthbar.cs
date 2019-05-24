@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HealthBarUI : MonoBehaviour
+public class Healthbar : MonoBehaviour
 {
-    Image healthBar;
+    public Image healthBar;
     [SerializeField]
     private Robbo character;
 

@@ -26,13 +26,13 @@ public class CrowbarThrow : MonoBehaviour
     public bool hasWeapon;
     public bool pulling;
 
-    public ParticleSystem catchParticle;
-    public ParticleSystem trailParticle;
+    [SerializeField] private GameObject m_catchParticle;
     public TrailRenderer trailRenderer;
 
     // Start is called before the first frame update
     void Start()
     {
+        trailRenderer.enabled = false;
         hasWeapon = true;
         pulling = false;
         m_crowbarRb = weapon.GetComponent<Rigidbody>();
@@ -78,6 +78,9 @@ public class CrowbarThrow : MonoBehaviour
         weapon.DOBlendableLocalRotateBy(Vector3.right * 90, .5f);
         m_crowbar.activated = true;
         pulling = true;
+
+        if(!hasWeapon)
+            trailRenderer.enabled = true;
     }
 
     public void WeaponCatch()
@@ -90,10 +93,17 @@ public class CrowbarThrow : MonoBehaviour
         weapon.localPosition = m_origLocPos;
         hasWeapon = true;
 
-        //Particle and trail
-        catchParticle.Play();
-        trailRenderer.emitting = false;
-        trailParticle.Stop();
+        GameObject temp = Instantiate(m_catchParticle, m_crowbar.transform.position + transform.up * 3, Quaternion.identity);
+        Destroy(temp, 1);
+
+        if (!hasWeapon && pulling == true)
+        {
+            trailRenderer.enabled = false;
+        }
+        else if (hasWeapon && !pulling) {
+            trailRenderer.enabled = false;
+        }
+            
     }
 
     public void WeaponThrow()
@@ -107,9 +117,7 @@ public class CrowbarThrow : MonoBehaviour
         weapon.transform.position += transform.right / 5;
         m_crowbarRb.AddForce(transform.forward * m_throwPower + transform.up * 2, ForceMode.Impulse);
 
-        //Trail
-        trailRenderer.emitting = true;
-        trailParticle.Play();
+        trailRenderer.enabled = true;
     }
 
     public Vector3 GetQuadraticCurvePoint(float t, Vector3 p0, Vector3 p1, Vector3 p2)

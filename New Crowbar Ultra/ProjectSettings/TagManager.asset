@@ -7,6 +7,11 @@ TagManager:
   - Effect
   - Projectile
   - Enemy
+  - HealthBarUI
+  - PauseUI
+  - WinStateUI
+  - FxTemporaire
+  - DeathState
   layers:
   - Default
   - TransparentFX
