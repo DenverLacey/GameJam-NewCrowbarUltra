@@ -1,6 +1,6 @@
 ﻿/*
  * Summary:	Roboo character mechanics and variables
- * Author:	Elisha Anagnostakis
+ * Author:	Elisha Anagnostakis / Denver Lacey
  * Date:	22/05/19
  */
 
@@ -39,23 +39,39 @@ public class Robbo : MonoBehaviour {
 	[Tooltip("Crowbar offset scale")]
 	[SerializeField] private Vector3 m_crowbarOffsetScale;
 
-	private Animator m_animator;
-	public bool Attacking { get; set; }
+	[Header("Swinging crowbar stuff")]
+	[Tooltip("IK Goal for right hand")]
+	[SerializeField] private Transform m_ikGoal;
 
-	private Vector2 m_IKGoal;
+	[Tooltip("Robbo's right arm transform")]
+	[SerializeField] private Transform m_rightArm;
+
+	[Tooltip("Moues Sensitivity")]
+	[SerializeField] private float m_mouseSensitivity;
+
+	[Tooltip("Min value for clamping arm movement")]
+	[SerializeField] private float m_minArmConstraint;
+
+	[Tooltip("Max value for clamping arm movement")]
+	[SerializeField] private float m_maxArmConstraint;
 
     public GameObject m_crowBar;
 
     [HideInInspector]
     public float m_health;
 
+	private Camera m_camera;
+
+	bool m_attacking;
+	private Animator m_animator;
 
     // Use this for initialization
     void Start () {
         m_health = m_maxHealth;
+		m_camera = Camera.main;
 		m_animator = GetComponent<Animator>();
+
 		// m_crowBar = GameObject.FindGameObjectWithTag("Crowbar");
-		Attacking = false;
 	}
 
 	void Update() {
@@ -70,39 +86,53 @@ public class Robbo : MonoBehaviour {
     }
 
     // Update is called once per frame
-    protected void FixedUpdate() {
-		if (Input.GetMouseButtonDown(0)) {
-			Attacking = true;
+    void FixedUpdate() {
+		if (Input.GetMouseButton(0)) {
+			m_attacking = true;
+			m_animator.SetLayerWeight(1, 1);
+			SwingCrowbar();
 		}
-		if (Input.GetMouseButtonUp(0)) {
-			Attacking = false;
+		else {
+			m_attacking = false;
+			m_animator.SetLayerWeight(1, 0);
 		}
-
-		RobboMovement();
+		DoMovement();
 	}
 
+	void DoMovement()
+    {
+		float movInput = Input.GetAxis("Vertical");
+		float rotInput = Input.GetAxis("Horizontal");
+
+		m_animator.SetFloat("Speed", movInput);
+
+		transform.Translate(0, 0, movInput * m_moveSpeed * Time.deltaTime);
+		transform.Rotate(Vector3.up, rotInput * m_rotSpeed);
+    }
 	private void OnAnimatorIK() {
-		if (Attacking) {
-			m_IKGoal += new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Moues Y"));
-			m_animator.SetIKPosition(AvatarIKGoal.RightHand, new Vector3(m_IKGoal.x, m_IKGoal.y, 0));
+		if (m_attacking) {
 			m_animator.SetIKPositionWeight(AvatarIKGoal.RightHand, 1);
+			m_animator.SetIKPosition(AvatarIKGoal.RightHand, m_ikGoal.position);
 		}
 		else {
 			m_animator.SetIKPositionWeight(AvatarIKGoal.RightHand, 0);
 		}
 	}
 
-	public void RobboMovement()
-    {
-		float rotInput = Input.GetAxis("Horizontal");
-		float movInput = Input.GetAxis("Vertical");
+	void SwingCrowbar() {
+		m_ikGoal.LookAt(m_rightArm.position);
+		m_ikGoal.Translate(Input.GetAxis("Mouse X") * m_mouseSensitivity * Time.deltaTime, 0, 0);
 
-        transform.Rotate(0, rotInput * m_rotSpeed, 0);
-        transform.Translate(0, 0, movInput * m_moveSpeed * Time.deltaTime);
+		Vector3 direction = (m_ikGoal.position - transform.position).normalized;
+		direction.y = 0;
 
-    }
+		Vector3 position = transform.position + direction * 5;
+		position.y = m_rightArm.position.y;
 
-    public void TakeDamage(float damage)
+		m_ikGoal.position = position;
+	}
+
+	public void TakeDamage(float damage)
     {
         m_health -= damage;
         if(m_health <= 0.0f)
