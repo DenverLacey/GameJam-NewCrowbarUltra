@@ -8136,86 +8136,31 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5423553778184004122, guid: 45f2627c6aaa5e141ad7c7acb1c98e77,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5423553778666219122, guid: 45f2627c6aaa5e141ad7c7acb1c98e77,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5423553778939742272, guid: 45f2627c6aaa5e141ad7c7acb1c98e77,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 2011963433}
-    - target: {fileID: 5423553778939742272, guid: 45f2627c6aaa5e141ad7c7acb1c98e77,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PlayGame
-      objectReference: {fileID: 0}
-    - target: {fileID: 5423553779145222508, guid: 45f2627c6aaa5e141ad7c7acb1c98e77,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2011963433}
     - target: {fileID: 5423553779145222508, guid: 45f2627c6aaa5e141ad7c7acb1c98e77,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadMainMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 5423553779670178275, guid: 45f2627c6aaa5e141ad7c7acb1c98e77,
-        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2011963433}
     - target: {fileID: 5423553779670178275, guid: 45f2627c6aaa5e141ad7c7acb1c98e77,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Resume
-      objectReference: {fileID: 0}
-    - target: {fileID: 5423553779670178275, guid: 45f2627c6aaa5e141ad7c7acb1c98e77,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5423553779765055529, guid: 45f2627c6aaa5e141ad7c7acb1c98e77,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2011963433}
     - target: {fileID: 5423553779765055529, guid: 45f2627c6aaa5e141ad7c7acb1c98e77,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: QuitGame
-      objectReference: {fileID: 0}
-    - target: {fileID: 5423553779765055529, guid: 45f2627c6aaa5e141ad7c7acb1c98e77,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5423553779835709849, guid: 45f2627c6aaa5e141ad7c7acb1c98e77,
-        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2011963433}
     - target: {fileID: 5423553779835709849, guid: 45f2627c6aaa5e141ad7c7acb1c98e77,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadMainMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 5423553779835709849, guid: 45f2627c6aaa5e141ad7c7acb1c98e77,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5423553779438518366, guid: 45f2627c6aaa5e141ad7c7acb1c98e77,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2011963433}
     - target: {fileID: 5423553778742350478, guid: 45f2627c6aaa5e141ad7c7acb1c98e77,
         type: 3}
       propertyPath: character
