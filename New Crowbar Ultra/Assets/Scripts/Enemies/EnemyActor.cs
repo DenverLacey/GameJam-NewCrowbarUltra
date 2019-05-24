@@ -54,6 +54,8 @@ public class EnemyActor : MonoBehaviour
 		m_navMeshAgent = GetComponent<NavMeshAgent>();
 		m_animator = GetComponent<Animator>();
 
+        m_target = transform.position;
+
 		m_player = FindObjectOfType<Robbo>();
 		m_currentState = AI_STATE.WANDER;
 		m_oldState = m_currentState;
@@ -86,6 +88,7 @@ public class EnemyActor : MonoBehaviour
 				Debug.LogError("State couldn't be determined!", this);
 				break;
 		}
+        Debug.Log(m_target);
 		m_navMeshAgent.destination = m_target;
 
 		// run animation
@@ -101,13 +104,15 @@ public class EnemyActor : MonoBehaviour
 	AI_STATE DetermineState() {
 		AI_STATE s = AI_STATE.WANDER;
 
-		Ray ray = new Ray(transform.position, m_player.transform.position - transform.position);
+        Ray ray = new Ray(transform.position, m_player.transform.position - transform.position);
 
-		if (Physics.Raycast(ray, out RaycastHit hit, m_viewRange)) {
-			if (hit.collider.GetComponent<Robbo>()) {
-				s = AI_STATE.ATTACK;
-			}
-		}
+        if (Physics.Raycast(ray, out RaycastHit hit, m_viewRange))
+        {
+            if (hit.collider.gameObject.GetComponent<Robbo>())
+            {
+                s = AI_STATE.ATTACK;
+            }
+        }
 
 		return s;
 	}
@@ -163,7 +168,7 @@ public class EnemyActor : MonoBehaviour
 	///	Attacks player
 	/// </summary>
 	void Attack() {
-		m_target = m_player.transform.position + (transform.position - m_player.transform.position).normalized * m_attackRange;
+        m_target = m_player.transform.position;
 		transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(m_player.transform.position - transform.position), .1f);
 		if (Vector3.Distance(transform.position, m_target) <= m_attackRange) {
 			m_meleeTimer -= Time.deltaTime;
@@ -205,7 +210,8 @@ public class EnemyActor : MonoBehaviour
 	///	A Vector3. The closest point on the nav mesh. Retuens Vector3.positiveInfinity if none found
 	/// </returns>
 	Vector3 FindClosestPoint(Vector3 source) {
-		if (NavMesh.SamplePosition(source, out NavMeshHit hit, transform.lossyScale.y, NavMesh.GetAreaFromName("walkable"))) {
+        NavMeshHit hit;
+		if (NavMesh.SamplePosition(source, out hit, transform.lossyScale.y, NavMesh.GetAreaFromName("walkable"))) {
 			if (hit.hit) {
 				return source;
 			}

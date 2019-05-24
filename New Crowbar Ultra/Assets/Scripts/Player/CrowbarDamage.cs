@@ -28,7 +28,7 @@ public class CrowbarDamage : MonoBehaviour
         {
             Debug.Log(Collision.gameObject.name);
             GetComponent<Rigidbody>().Sleep();
-            GetComponent<Rigidbody>().collisionDetectionMode = CollisionDetectionMode.ContinuousSpeculative;
+            GetComponent<Rigidbody>().collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
             GetComponent<Rigidbody>().isKinematic = true;
             activated = false;
 

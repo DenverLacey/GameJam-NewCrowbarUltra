@@ -37,8 +37,6 @@ public class CrowbarThrow : MonoBehaviour
         pulling = false;
         m_crowbarRb = weapon.GetComponent<Rigidbody>();
         m_crowbar = weapon.GetComponent<CrowbarDamage>();
-        m_origLocPos = weapon.localPosition;
-        m_origLocRot = weapon.localEulerAngles;
     }
 
     // Update is called once per frame
@@ -72,7 +70,7 @@ public class CrowbarThrow : MonoBehaviour
     {
         m_pullPosition = weapon.position;
         m_crowbarRb.Sleep();
-        m_crowbarRb.collisionDetectionMode = CollisionDetectionMode.ContinuousSpeculative;
+        m_crowbarRb.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
         m_crowbarRb.isKinematic = true;
         weapon.DORotate(new Vector3(-90, -90, 0), .2f).SetEase(Ease.InOutSine);
         weapon.DOBlendableLocalRotateBy(Vector3.right * 90, .5f);
@@ -126,5 +124,11 @@ public class CrowbarThrow : MonoBehaviour
         float tt = t * t;
         float uu = u * u;
         return (uu * p0) + (2 * u * t * p1) + (tt * p2);
+    }
+
+    public void SetOriginals(Vector3 position, Vector3 rotation)
+    {
+        m_origLocPos = position;
+        m_origLocRot = rotation;
     }
 }

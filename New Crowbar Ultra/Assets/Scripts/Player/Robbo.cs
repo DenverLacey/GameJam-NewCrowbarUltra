@@ -87,6 +87,7 @@ public class Robbo : MonoBehaviour {
 			m_crowBar.transform.localPosition = m_crowbarOffsetPosition;
 			m_crowBar.transform.localRotation = Quaternion.Euler(m_crowbarOffsetRotation);
 			m_crowBar.transform.localScale = m_crowbarOffsetScale;
+            GetComponent<CrowbarThrow>().SetOriginals(m_crowBar.transform.localPosition, m_crowBar.transform.localEulerAngles);
 		}
     }
 

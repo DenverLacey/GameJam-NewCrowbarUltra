@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4788875625945172}
   - component: {fileID: 33957414595663332}
   - component: {fileID: 23010667110098446}
+  - component: {fileID: 65882738483756326}
   m_Layer: 0
   m_Name: DetergentWeedKiller_001
   m_TagString: Untagged
@@ -63,7 +64,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1695617696603816}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.193594, y: 0.397, z: -8.283479}
+  m_LocalPosition: {x: 1.6509583, y: 6.0732136, z: 16.252945}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4788875625945172}
@@ -85,7 +86,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: db88590cdcb2da646bae3401950fb665, type: 3}
+  - {fileID: 2100000, guid: ac5372965e3a07f40923a9f9f76b1db8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -112,3 +113,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1543708488854214}
   m_Mesh: {fileID: 4300000, guid: db88590cdcb2da646bae3401950fb665, type: 3}
+--- !u!65 &65882738483756326
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1543708488854214}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.35501018, y: 0.5134231, z: 0.15166736}
+  m_Center: {x: 0, y: 0, z: 0}
