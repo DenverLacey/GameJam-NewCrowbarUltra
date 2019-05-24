@@ -91,7 +91,7 @@ public class CrowbarThrow : MonoBehaviour
         weapon.localPosition = m_origLocPos;
         hasWeapon = true;
 
-        GameObject temp = Instantiate(m_catchParticle, m_crowbar.transform.position + transform.up * 3, Quaternion.identity);
+        GameObject temp = Instantiate(m_catchParticle, m_crowbar.transform.position, Quaternion.identity);
         Destroy(temp, 1);
 
         if (!hasWeapon && pulling == true)

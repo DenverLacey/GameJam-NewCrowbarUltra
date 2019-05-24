@@ -175,7 +175,7 @@ public class EnemyActor : MonoBehaviour
 			if (m_meleeTimer <= 0.0f) {
 				if (Vector3.Distance(transform.position, m_player.transform.position) <= m_attackRange + 0.1f) {
 					m_animator.SetTrigger("Attack");
-					m_player.TakeDamage(m_damage);
+					m_player.GetComponent<Robbo>().TakeDamage(m_damage);
 					m_meleeTimer = m_meleeCooldown;
 				}
 			}

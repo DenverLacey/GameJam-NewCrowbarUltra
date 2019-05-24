@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Test Scenes/Elisha/MainMenu.unity
     guid: 04aad1b796af65147ac97ea8b177b09a
   - enabled: 1
-    path: Assets/Scenes/Test Scenes/Elisha/ElishaScene.unity
-    guid: bb067ea725d2a0a43bcae4e005af3583
+    path: Assets/Scenes/LevelOne.unity
+    guid: 90a9b91f809752744a3688bf3b537d43
   m_configObjects: {}

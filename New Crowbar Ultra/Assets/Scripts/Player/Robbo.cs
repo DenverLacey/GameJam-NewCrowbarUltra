@@ -145,6 +145,7 @@ public class Robbo : MonoBehaviour {
         {
             Destroy(gameObject);
             m_deathState.SetActive(true);
+            Time.timeScale = 0.0f;
         }
     }
 }

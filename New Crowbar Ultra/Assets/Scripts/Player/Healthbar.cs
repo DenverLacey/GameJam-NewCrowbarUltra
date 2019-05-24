@@ -20,6 +20,13 @@ public class Healthbar : MonoBehaviour
     void Update()
     {
         if (character)
+        {
             healthBar.fillAmount = character.GetComponent<Robbo>().m_health / character.GetComponent<Robbo>().m_maxHealth;
+        }
+
+        if(character.m_health <= 0.0f)
+        {
+            healthBar.fillAmount = 0.0f;
+        }
     }
 }
