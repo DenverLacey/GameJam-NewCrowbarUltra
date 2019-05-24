@@ -57,7 +57,7 @@ public class Robbo : MonoBehaviour {
 
     public GameObject m_crowBar;
 
-    [HideInInspector]
+    //[HideInInspector]
     public float m_health;
 
 	private Camera m_camera;
@@ -65,11 +65,16 @@ public class Robbo : MonoBehaviour {
 	bool m_attacking;
 	private Animator m_animator;
 
+    private GameObject m_deathState;
+
     // Use this for initialization
     void Start () {
         m_health = m_maxHealth;
 		m_camera = Camera.main;
 		m_animator = GetComponent<Animator>();
+
+        m_deathState = GameObject.FindGameObjectWithTag("DeathState");
+        m_deathState.SetActive(false);
 
 		// m_crowBar = GameObject.FindGameObjectWithTag("Crowbar");
 	}
@@ -138,6 +143,7 @@ public class Robbo : MonoBehaviour {
         if(m_health <= 0.0f)
         {
             Destroy(gameObject);
+            m_deathState.SetActive(true);
         }
     }
 }
