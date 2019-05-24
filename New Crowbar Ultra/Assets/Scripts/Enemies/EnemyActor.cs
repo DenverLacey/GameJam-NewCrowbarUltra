@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+[RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(NavMeshAgent))]
 public class EnemyActor : MonoBehaviour
 {
@@ -39,6 +40,8 @@ public class EnemyActor : MonoBehaviour
 	public bool Agro { get; set; }
 	public EnemyRoom Room { get; set; }
 
+	private Animator m_animator;
+
 	private enum AI_STATE {
 		WANDER,
 		ATTACK
@@ -49,6 +52,7 @@ public class EnemyActor : MonoBehaviour
 
 	void Start() {
 		m_navMeshAgent = GetComponent<NavMeshAgent>();
+		m_animator = GetComponent<Animator>();
 
 		m_player = FindObjectOfType<Robbo>();
 		m_currentState = AI_STATE.WANDER;
@@ -83,6 +87,9 @@ public class EnemyActor : MonoBehaviour
 				break;
 		}
 		m_navMeshAgent.destination = m_target;
+
+		// run animation
+		m_animator.SetFloat("Speed", m_navMeshAgent.velocity.magnitude / m_navMeshAgent.speed);
 	}
 
 	/// <summary>
@@ -162,6 +169,7 @@ public class EnemyActor : MonoBehaviour
 			m_meleeTimer -= Time.deltaTime;
 			if (m_meleeTimer <= 0.0f) {
 				if (Vector3.Distance(transform.position, m_player.transform.position) <= m_attackRange + 0.1f) {
+					m_animator.SetTrigger("Attack");
 					m_player.TakeDamage(m_damage);
 					m_meleeTimer = m_meleeCooldown;
 				}
