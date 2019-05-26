@@ -88,7 +88,6 @@ public class EnemyActor : MonoBehaviour
 				Debug.LogError("State couldn't be determined!", this);
 				break;
 		}
-        Debug.Log(m_target);
 		m_navMeshAgent.destination = m_target;
 
 		// run animation
@@ -104,7 +103,7 @@ public class EnemyActor : MonoBehaviour
 	AI_STATE DetermineState() {
 		AI_STATE s = AI_STATE.WANDER;
 
-        Ray ray = new Ray(transform.position, m_player.transform.position - transform.position);
+        Ray ray = new Ray(transform.position + transform.up * transform.localScale.y, m_player.transform.position - transform.position);
 
         if (Physics.Raycast(ray, out RaycastHit hit, m_viewRange))
         {
@@ -169,13 +168,12 @@ public class EnemyActor : MonoBehaviour
 	/// </summary>
 	void Attack() {
         m_target = m_player.transform.position;
-		transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(m_player.transform.position - transform.position), .1f);
 		if (Vector3.Distance(transform.position, m_target) <= m_attackRange) {
 			m_meleeTimer -= Time.deltaTime;
 			if (m_meleeTimer <= 0.0f) {
 				if (Vector3.Distance(transform.position, m_player.transform.position) <= m_attackRange + 0.1f) {
 					m_animator.SetTrigger("Attack");
-					m_player.GetComponent<Robbo>().TakeDamage(m_damage);
+					m_player.TakeDamage(m_damage);
 					m_meleeTimer = m_meleeCooldown;
 				}
 			}
